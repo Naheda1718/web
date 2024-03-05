@@ -17,7 +17,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-   
+
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -39,8 +39,8 @@ https://templatemo.com/tm-574-mexant
 
   </head>
   <style>
-  
-   
+
+
    .header-image-container {
       position: relative;
       /* Adjust the margin to move the image to the right */
@@ -73,7 +73,7 @@ https://templatemo.com/tm-574-mexant
       font-weight: bold;
       text-align: center;
     }
-   
+
 .Aboutcon {
   text-align: center; /* Center align text */
 }
@@ -88,7 +88,7 @@ https://templatemo.com/tm-574-mexant
   color: #333;
   width: 900px;
  margin-top: 20px;
- 
+
  text-align: center;
    /* Center align container */
 }
@@ -103,84 +103,85 @@ https://templatemo.com/tm-574-mexant
 }
 
 .why-choose-us {
-  text-align: center;
-}
+  padding: 20px;
+  text-align:center;
 
-.why-choose-us h2 {
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 40px;
 }
 
 .flip-box-container {
-
   display: flex;
-  justify-content: center; /* Center flip boxes horizontally */
-  align-items: center;
-  margin-bottom: 30px;
-   /* Center flip boxes vertically */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
- 
-
-
 .flip-box {
-  background-color: transparent;
-  width: 250px;
-  height: 250px;
+  width: calc(50% - 20px); /* Adjust as needed for spacing */
+  margin: 10px;
   perspective: 1000px;
-  margin: 30px 30px 30px 30px;
- 
+  width: 250px;
+  height: 250px; /* Adjust height */
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .flip-box-inner {
-  
   position: relative;
   width: 100%;
   height: 100%;
-
-  transition: transform 0.6s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
+  transform: rotateY(180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-justify-content: center;
-align-items: center;
-text-align: center;
 }
 
 .flip-box-front {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
 
-  justify-content: center; /* Center content horizontally */
+.flip-box-back {
+  background-color: #fff;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.flip-box-back h4 {
 
-.flip-box-back {
-  
-  color: white;
-  transform: rotateX(180deg);
+ margin-bottom:30px;
 }
-.flip-box-back h2{
-  
-  margin-top: 20px;
+
+.flip-box-front h4 {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Background color for better readability */
+  padding: 5px 10px;
 }
+
+
 .flip-box-front img,
 .flip-box-back img {
   width: 40%; /* Ensure the image fits within the container */
   height: 40%; /* Ensure the image fits within the container */
   display: block; /* Ensure the image does not create extra space */
-  margin: auto; 
+  margin: auto;
   margin-top: 30px;/* Center the image horizontally */
 }
 
@@ -193,17 +194,17 @@ text-align: center;
   {% include 'include/navbar.html'%}
   <!-- ***** Header Area End ***** -->
 
-  
+
 
 
   <div class="header-image-container">
     <img src="{% static 'images/slide-01.jpg' %}" alt="Image" class="header-image">
     <div class="image-text">About Us</div>
-    
+
   </div>
   <!-- ***** Main Banner Area End ***** -->
 
-  
+
   <div class="container-fluid" >
     <div class="container py-5">
         <div class="row g-5">
@@ -216,28 +217,31 @@ text-align: center;
                 </div>
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-              
+
                 <h1 class="mb-4" style="font-weight: bold;">Preparing For Your Success <br>Providing Best <span class="highlight">IT Solutions</span></h1>
                 <p style="font-size: 18px;">ProgGenius offers comprehensive software development outsourcing, system integration, and solution delivery services on a global scale. Our dedication lies in fostering long-term partnerships with clients, delivering excellence through dedicated teams of developers.</p>
                 <p class="mb-4"style="font-size: 18px;" >Our commitment is rooted in comprehending your business needs and transforming them into groundbreaking software solutions, propelling your growth and triumph.</p>
-         
+
             </div>
         </div>
     </div>
 </div>
 
+
+
+
 <section class="why-choose-us" style="margin: 0;">
-  <h2 >Why Choose Us</h2>
+  <h2 style="font-weight:bold;">Why Choose Us</h2>
   <div class="flip-box-container">
     <div class="flip-box">
       <div class="flip-box-inner">
         <div class="flip-box-front">
-          <img src="{% static 'images/responsive.png' %}"  alt="Front Image 1">
+          <img src="{% static 'images/responsive.png' %}" alt="Front Image 1">
           <h4>Responsive Design</h4>
         </div>
         <div class="flip-box-back">
-          <h4 style="margin-top: 20px;">Responsive Design</h4>
-          <p style="margin-top: 30px;">Delivering responsive design solutions to optimize user experiences across all devices.</p>
+          <h4 >Responsive Design</h4>
+          <p>Delivering responsive design solutions to optimize user experiences across all devices.</p>
         </div>
       </div>
     </div>
@@ -248,8 +252,8 @@ text-align: center;
           <h4>Call Support</h4>
         </div>
         <div class="flip-box-back">
-          <h4 style="margin-top: 20px;">Call Support</h4>
-          <p style="margin-top: 30px;">Ensuring immediate assistance and support through our responsive call support services.</p>
+          <h4>Call Support</h4>
+          <p>Ensuring immediate assistance and support through our responsive call support services.</p>
         </div>
       </div>
     </div>
@@ -260,31 +264,29 @@ text-align: center;
           <h4>Quality Product</h4>
         </div>
         <div class="flip-box-back">
-          <h4 style="margin-top: 20px;">Quality Product</h4>
-          <p style="margin-top: 30px;">Guaranteeing top-notch quality products through rigorous testing and meticulous craftsmanship.</p>
+          <h4>Quality Product</h4>
+          <p>Guaranteeing top-notch quality products through rigorous testing and meticulous craftsmanship.</p>
         </div>
       </div>
-    </div><div class="flip-box">
+    </div>
+    <div class="flip-box">
       <div class="flip-box-inner">
         <div class="flip-box-front">
           <img src="{% static 'images/software.png' %}" alt="Front Image 1">
           <h4>Productive Software</h4>
         </div>
         <div class="flip-box-back">
-          <h4 style="margin-top: 20px;">Productive Software</h4>
-          <p style="margin-top: 30px;">Empowering businesses with productive software solutions designed for efficiency and growth.</p>
+          <h4>Productive Software</h4>
+          <p>Empowering businesses with productive software solutions designed for efficiency and growth.</p>
         </div>
       </div>
     </div>
-
-
-    <!-- Add more flip boxes as needed -->
   </div>
 </section>
 
- 
-  
- 
+
+
+
 
 
 {% include 'include/footer.html' %}
@@ -321,7 +323,7 @@ text-align: center;
               var innerTranslate = slideProgress * innerOffset;
               swiper.slides[i].querySelector(".slide-inner").style.transform =
                 "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
+            }
           },
           touchStart: function() {
             var swiper = this;

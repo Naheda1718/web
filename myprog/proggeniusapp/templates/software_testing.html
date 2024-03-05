@@ -32,7 +32,76 @@ https://templatemo.com/tm-574-mexant
 
 -->
 <style>
-   
+.main-services {
+    padding: 50px 0;
+}
+
+.main-services .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programming-languages {
+    margin-top: 30px;
+}
+
+.programming-languages h2{
+   color:green;
+}
+.language-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.language-icon {
+    margin-right: 20px;
+}
+
+.language-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.language-details h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+.language-details{
+    flex-grow:1;
+}
+.col-lg-6 > h2 {
+    color: green; /* Change the color to green */
+}
+
+
+
+.language-name h2 {
+    margin: 0;
+    color: black;
+}
+
+.col-lg-6 {
+    padding: 0 15px;
+
+}
+
+
+
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
    .header-image-container {
       position: relative;
       /* Adjust the margin to move the image to the right */
@@ -46,13 +115,14 @@ https://templatemo.com/tm-574-mexant
 
     .image-text {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       font-size: 60px;
       font-weight: bold;
       text-align: center;
+      width:auto;
     }
     .image-text1 {
       position: absolute;
@@ -60,93 +130,15 @@ https://templatemo.com/tm-574-mexant
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      margin-top: 20px;
       font-size: 25px;
+      margin-top:30px;
       font-weight: bold;
+       width:auto;
       text-align: center;
     }
-    
-    .container {
-  display: flex;
-  margin-bottom: 50px;
-
-  
-  
-}
-
-.left-side {
-  flex: 1;
-}
-
-.left-side img {
-  width: 80%;
-  height: 500px;
-  margin: 10px 10px 10px 10px;
-  margin-top: 100px;
-}
-
-.right-side {
-  flex: 1;
-  padding: 0  ;
- 
-
- 
-
-}
-
-.right-side h2 {
-  font-size: 20px;
-  color: #10e172;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-.right-side p {
-  font-size: 16px;
-  color: #666;
-}
-
-.language-box {
-  display: flex; /* Use flexbox */
-  align-items: center; /* Align items vertically */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
-  padding:10px 10px 10px 10px; /* Add padding to create space between the content and the border */
-  border-radius: 8px; /* Add border-radius for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle shadow effect */
-  margin: 10px 10px 10px 10px;
-}
-.language-box1 {
-  display: flex; /* Use flexbox */
-  width: 700px;
-  
-}
-
-.language-icon {
-  margin-right: 20px; /* Add some right margin for spacing */
-}
-
-.language-icon img {
-  width: 50px; /* Adjust the width of the icon */
-  height: 50px; /* Adjust the height of the icon */
-}
-
-.language-details h2 {
-  flex-grow: 1; 
-  font-weight: bold;
-  font-size: medium;
-  color: black;/* Allow details to grow and take remaining space */
-}
-
-.language-name h2 {
-  margin: 0;
-  color: black; /* Change the color to black */
-}
 
 
-.language-description {
-  margin-top: 5px; /* Add some top margin for spacing */
-}
+
 
 .header-apptitle {
   text-align: center; /* Align the text to the center */
@@ -159,17 +151,20 @@ https://templatemo.com/tm-574-mexant
   color: #333; /* Change the text color */
   font-weight: bold;
   text-align: center;
-  margin-top: 20px; /* Make the text bold */
+  margin-top: 20px;
+  width: auto;/* Make the text bold */
 }
 .header-apptitle p {
   font-size: 20px; /* Adjust the font size */
   color: #333; /* Change the text color */
- width: 90%;
+ width: auto;
   text-align: center;
- 
+
   margin-top: 20px;
  margin-left: 50px; /* Make the text bold */
 }
+
+
   </style>
 
   </head>
@@ -180,307 +175,346 @@ https://templatemo.com/tm-574-mexant
   <!-- ***** Header Area Start ***** -->
   {% include 'include/navbar.html'%}
   <!-- ***** Header Area End ***** -->
-  
+
 
 
   <div class="header-image-container">
     <img src="{% static 'images/softwaretest.jpg' %}" alt="Image" class="header-image">
     <div class="image-text">Manual And Automation Testing</div>
-    <div class="image-text1">We are experienced in providing software manual & automation testing services.</div>
+    <div class="image-text1">A Trusted Global Provider of QA Testing Solution</div>
   </div>
 
   <div class="header-apptitle">
     <h2> Quality Manual & Automation Service</h2>
     <p>Ensuring seamless integration and deployment through meticulous testing, our QA testers uphold the standard of excellence in our Implementation Service.</p>
     </div>
- 
+
   <!-- ***** Main Banner Area End ***** -->
 
   <section class="main-services">
     <div class="container">
-      <div class="left-side">
-        <img src="{% static 'images/testimage1.jpg' %}" alt="Image">
-      </div>
-      <div class="right-side">
-        <h2>Manual & Automation Testing</h2>
-        <p>This pillar focuses on automated testing, performance testing, security testing, and the creation of realistic test environments to ensure software quality throughout development.</p>
-        <h2>Programming Languages</h2>
-       
-       <div class="language-box1">
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/java.png'%}" alt="Language Icon">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'images/testimage1.jpg' %}" alt="Image" class="img-fluid">
             </div>
-            <div class="language-details">
-              <h2 class="language-name">JAVA</h2>
-             
-            </div>
-          
-      </div>
-          
-          <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/html-5.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">HTML</h2>
-              
-            </div>
-            
-          </div>
-          
-          <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/java-script.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">JAVASCRIPT</h2>
-             
-            </div>
-          </div>
+            <div class="col-lg-6">
+                <h2>Manual & Automation Testing</h2>
+                <p>This pillar focuses on automated testing, performance testing, security testing, and the creation of realistic test environments to ensure software quality throughout development.</p>
 
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/python.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">PYTHON</h2>
-             
-            </div>
-          
-      </div>
-      </div>
-      <div class="language-box1">
-  
-        <div class="language-box">
-          <div class="language-icon">
-            <img src="{% static 'images/php.png'%}" alt="Language Icon">
-          </div>
-          <div class="language-details">
-            <h2 class="language-name">PHP</h2>
-            
-          </div>
-        </div>
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/css-3.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">CSS</h2>
-             
-            </div>
-            
-          </div>
 
-        
-        
-          
-      </div>
-      
-    
-      
-      <h2>Databases</h2>
 
-      <div class="language-box1">
-          
-        <div class="language-box">
-          <div class="language-icon">
-            <img src="{% static 'images/MySQL.png'%}" alt="Language Icon">
-          </div>
-          <div class="language-details">
-            <h2 class="language-name">MYSQL</h2>
-            
-          </div>
-          
-        </div>
-        <div class="language-box">
-          <div class="language-icon">
-            <img src="{% static 'images/postgre.png'%}" alt="Language Icon">
-          </div>
-          <div class="language-details">
-            <h2 class="language-name">POSTGRESQL</h2>
-           
-          </div>
-          
-        </div>
-        <div class="language-box">
-          <div class="language-icon">
-            <img src="{% static 'images/sqlite.png'%}" alt="Language Icon">
-          </div>
-          <div class="language-details">
-            <h2 class="language-name">SQLITE</h2>
-           
-          </div>
-        </div>
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/oracle.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">ORACLE</h2>
-             
-            </div>
-          </div>
+                  <div class="programming-languages">
+                    <h2>Programming Languages</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                    <img src="{% static 'images/java.png'%}" alt="Language Icon">
+                                </div>
+                                <div class="language-details">
+                                  <h2 class="language-name">JAVA</h2>
+                                </div>
+                            </div>
+                        </div>
 
-          
-      
-      
-        
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                     <img src="{% static 'images/html-5.png'%}" alt="Language Icon">
+                                </div>
+                                <div class="language-details">
+                                  <h2 class="language-name">HTML</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/java-script.png'%}" alt="Language Icon">
+                            </div>
+                            <div class="language-details">
+                              <h2 class="language-name">JAVASCRIPT</h2>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/css-3.png'%}" alt="Language Icon">
+                            </div>
+                            <div class="language-details">
+                              <h2 class="language-name">CSS</h2>
+
+                                 </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/php.png'%}" alt="Language Icon">
+                            </div>
+                            <div class="language-details">
+                              <h2 class="language-name">PHP</h2>
+                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/python.png'%}" alt="Language Icon">
+                            </div>
+                            <div class="language-details">
+                              <h2 class="language-name">PYTHON</h2>
+                                 </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                <!--Databased-->
+
+                 <div class="programming-languages">
+                    <h2>Databases</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/mysql.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">MYSQL</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                     <img src="{% static 'images/postgre.png'%}" alt="Language Icon">
+                                  </div>
+                                  <div class="language-details">
+                                    <h2 class="language-name">POSTGRESQL</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                <img src="{% static 'images/sqlite.png'%}" alt="Language Icon">
+                                  </div>
+                                 <div class="language-details">
+                                    <h2 class="language-name">SQLITE</h2>
+                                                        </div>
+                            </div>
+                        </div>
+
+                          <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                <img src="{% static 'images/oracle.png'%}" alt="Language Icon">
+                                  </div>
+                                 <div class="language-details">
+                                    <h2 class="language-name">ORACLE</h2>
+                                                        </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Add similar columns for other languages -->
+                    </div>
+                </div>
+
+
+
+                 <!--rogramming tools-->
+
+
+                    <div class="programming-languages">
+                    <h2>Programming Tools</h2>
+                    <div class="row">
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                    <img src="{% static 'images/visual-studio.png'%}" alt="Language Icon">
+                                  </div>
+                                  <div class="language-details">
+                                    <h2 class="language-name">VISUAL STUDIO</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                    <img src="{% static 'images/selenium.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">SELENIUM</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                    <img src="{% static 'images/cypress.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">CYPRESS</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/junit.jpg'%}" alt="Language Icon">
+                                  </div>
+                                  <div class="language-details">
+                                    <h2 class="language-name">JUNIT</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/qtest.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">QTEST</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/cucumber.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">CUCUMBER</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/jira.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">JIRA</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/azure.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">AZURE</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/jenkins.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">JENKINS</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/github.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">GITHUB</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-md-6">
+                            <div class="language-box">
+                                <div class="language-icon">
+                                   <img src="{% static 'images/postman.png'%}" alt="Language Icon">
+                              </div>
+                              <div class="language-details">
+                                <h2 class="language-name">POSTMAN</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add similar columns for other languages -->
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                        <!-- Add similar columns for other languages -->
+                    </div>
+                </div>
+
+
+                <!-- Add similar sections for databases and programming tools -->
+
+            </div>
+        </div>
     </div>
-    <h2>Programming Tools</h2>
+</section>
 
-      <div class="language-box1">
-          
-        <div class="language-box">
-          <div class="language-icon">
-            <img src="{% static 'images/visual-studio.png'%}" alt="Language Icon">
-          </div>
-          <div class="language-details">
-            <h2 class="language-name">VISUAL STUDIO</h2>
-            
-          </div>
-          
-        </div>
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/selenium.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">SELENIUM</h2>
-              
-            </div>
-          </div>
-          
-        
-        <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/cypress.png'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">CYPRESS</h2>
-              
-            </div>
-            
-          </div>
-          <div class="language-box">
-            <div class="language-icon">
-              <img src="{% static 'images/junit.jpg'%}" alt="Language Icon">
-            </div>
-            <div class="language-details">
-              <h2 class="language-name">JUNIT </h2>
-              
-            </div>
-            
-          </div>
-          
-          
-          
-          
-         
-        </div> 
-    
-     
-      
-  <div class="language-box1">
-  
-    <div class="language-box">
-      <div class="language-icon">
-        <img src="{% static 'images/qtest.png'%}" alt="Language Icon">
-      </div>
-      <div class="language-details">
-        <h2 class="language-name">QTEST</h2>
-        
-      </div>
-    </div>
-    
-    <div class="language-box">
-        <div class="language-icon">
-          <img src="{% static 'images/cucumber.png'%}" alt="Language Icon">
-        </div>
-        <div class="language-details">
-          <h2 class="language-name">CUCUMBER</h2>
-          
-        </div>
-        
-      </div>
-      <div class="language-box">
-        <div class="language-icon">
-          <img src="{% static 'images/jira.png'%}" alt="Language Icon">
-        </div>
-        <div class="language-details">
-          <h2 class="language-name">JIRA</h2>
-          
-        </div>
-        
-      </div>
-      <div class="language-box">
-        <div class="language-icon">
-          <img src="{% static 'images/azure.png'%}" alt="Language Icon">
-        </div>
-        <div class="language-details">
-          <h2 class="language-name">AZURE</h2>
-          
-        </div>
-        
-      </div>
-  </div>
-  <div class="language-box1">
-  
-    <div class="language-box">
-      <div class="language-icon">
-        <img src="{% static 'images/jenkins.png'%}" alt="Language Icon">
-      </div>
-      <div class="language-details">
-        <h2 class="language-name">JENKINS</h2>
-        
-      </div>
-    </div>
-    <div class="language-box">
-        <div class="language-icon">
-          <img src="{% static 'images/Github.png'%}" alt="Language Icon">
-        </div>
-        <div class="language-details">
-          <h2 class="language-name">GITHUB</h2>
-          
-        </div>
-        
-      </div>
-    
-    <div class="language-box">
-        <div class="language-icon">
-          <img src="{% static 'images/postman.png'%}" alt="Language Icon">
-        </div>
-        <div class="language-details">
-          <h2 class="language-name">POSTMAN</h2>
-          
-        </div>
-      </div>
 
-    
-      
-  </div>
- 
-  
-  </section>
-
- 
-  
-
-  
-  
 
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p style="margin-left: 550px;">Made By ProgGenius 
-          
-        </p>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Made By ProgGenius</p>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
-  
+</footer>
+
+
+
+
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -514,7 +548,7 @@ https://templatemo.com/tm-574-mexant
               var innerTranslate = slideProgress * innerOffset;
               swiper.slides[i].querySelector(".slide-inner").style.transform =
                 "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
+            }
           },
           touchStart: function() {
             var swiper = this;
